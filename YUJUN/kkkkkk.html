@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  
+<audio controls>
+  <source src="audio2.mp3" t
+  type="audio/mp3">
+</audio>
+  <style type:"text css">
+    body { font-family: serif}
+    h1 { color: lightblue;
+      font-family: Georgia;
+      text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    } 
+    
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .float-element {
+      animation: float 1.5s infinite;
+      text-align: center;
+    }
+
+    
+table {
+  border-collapse: collapse;
+  width: 100%;
+  opacity: 50%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.draggable-table {
+    background-color: lightblue;
+    position: absolute;
+    cursor: move; /* Mengubah kursor saat di atas tabel */
+  }
+  
+  </style>
+  
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>form!</title>
+</head>
+
+<body style = "background: url(image4.jpg); background-size: cover;" >
+  <h1 class="float-element">Isi Formulir! </h1>
+<div class="center">
+  <table border="1" class="draggable-table">
+    <tr>
+      <td style="background-color: lightblue;">
+        <label for="fname">NISN:</label><br>
+        <input type="text" id="fname" name="fname" value="0069660008"><br>
+        <label for="fname">Nama Lengkap:</label><br>
+        <input type="text" id="fname" name="fname" value="Yusuf Juliansyah"><br>
+        <label for="fname">Kelas :</label><br>
+        <select>
+          <option value="XI PPLG B">XI PPLG B</option>
+          <option value="X PPLG B">X PPLG B</option>
+          <option value="XII PPLG B">XII PPLG B</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+
+</body>
+</html>
